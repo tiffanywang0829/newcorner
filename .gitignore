@@ -1,0 +1,14 @@
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# Database files (won't work on Vercel anyway - use a real database for production)
+database.txt
+database.csv
+
+# OS files
+.DS_Store

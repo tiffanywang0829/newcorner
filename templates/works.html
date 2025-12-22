@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link href="{{ url_for('static', filename='assets/favicon.ico') }}" rel="icon">
+
+  <title>Title page</title>
+
+<link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet">
+<style>
+  .black-image-project-hover img {
+    filter: none !important;
+    transition: filter 0.3s ease;
+    height: 100px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+  }
+  .black-image-project-hover:hover img {
+    filter: grayscale(100%) !important;
+  }
+  .card-container {
+    margin-top: -10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .card-container-lg {
+    margin-top: -10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .projects-carousel {
+    position: relative !important;
+  }
+  .carousel-control {
+    position: absolute !important;
+    top: 450px !important;
+  }
+</style>
+</head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="{{ url_for('my_home') }}" title="">01 : Home</a></li>
+          <li><a href="{{ url_for('render_static', page_name='works') }}" title="">02 : Works</a></li>
+          <li><a href="{{ url_for('render_static', page_name='about') }}" title="">03 : About me</a></li>
+          <li><a href="{{ url_for('render_static', page_name='contact') }}" title="">04 : Contact</a></li>
+        </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+        <div class="text-center">
+          <h1 class="h2">02 : Works</h1>
+          <p>current and past work and projects</p>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+     
+      <div id="myCarousel" class="carousel slide projects-carousel">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-sm-4">
+
+                      <a href="#" title="" class="black-image-project-hover">
+                        <img src="{{ url_for('static', filename='assets/images/azure.jpg') }}" alt="" class="img-responsive">
+                      </a>
+                      <div class="card-container card-container-lg">
+                        <h4>currently</h4>
+                        <h3><a href="https://azure.microsoft.com/en-us/products/advisor" target="_blank">Microsoft - Azure Advisor</a></h3>
+                        <h4>Product Manager II | New York, NY</h4>
+                        <p>PM for Azure Advisor, a cloud optimization platform with 300K MAU via Azure Portal and 7M monthly API calls. Led the 0 to 1 launch of the Advisor managed experience, generating 100K+ personalized recommendations for Microsoft's top 500 enterprise customers.</p>
+                        <a href="https://www.youtube.com/watch?v=58_6MkB2znI" title="" class="btn btn-default" target="_blank">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="#" title="" class="black-image-project-hover">
+                        <img src="{{ url_for('static', filename='assets/images/ethsign.jpg') }}" alt="" class="img-responsive">
+                      </a>
+                      <div class="card-container card-container-lg">
+                        <h4>previously</h4>
+                        <h3>EthSign</h3>
+                        <p>TokenTable is a smart contract-driven token/equity management platform. To date, it has distributed over $2 billion of token to more than 40 million users. I owned product vision, roadmap, and feature delivery; led user onboarding, UX iterations, and feedback loops with early adopters.</p>
+                        <a href="https://sign.global/tokentable" title="" class="btn btn-default" target="_blank">Learn More</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <a href="#" title="" class="black-image-project-hover">
+                        <img src="{{ url_for('static', filename='assets/images/tencent.jpg') }}" alt="" class="img-responsive">
+                      </a>
+                      <div class="card-container card-container-lg">
+                        <h4>previously</h4>
+                        <h3>Tencent - Autonomous Driving</h3>
+                        <p>At Tencent, I worked on autonomous driving by analyzing driving log data (LiDAR, radar, camera) from real-world driving sessions to identify critical edge-case scenarios. I built data pipelines in Python/SQL to aggregate and clean large-scale sensor data. I also helped build the Intelligent Vehicle Cloud Platform, a cloud-based data platform that manages large volumes of data required for simulations and modeling.</p>
+                        <a href="https://www.tencent.com/en-us/articles/2201669.html" title="" class="btn btn-default" target="_blank">Learn More</a>
+                      </div>
+                    </div>
+                    
+                </div>
+                <!--/row-->
+            </div>
+            <!--/item-->
+            <div class="item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <a href="#" class="black-image-project-hover">
+                      <img src="{{ url_for('static', filename='assets/images/air.jpg') }}" alt="Image" class="img-responsive">
+                    </a>
+                    <div class="card-container">
+                      <h4>project</h4>
+                      <h3><a href="https://www.airvitalize.tech/" target="_blank">Chimney filter for Alaska</a></h3>
+                      <p>I helped build an air filter for wood-burning residents in Fairbanks, Alaska, after spending ~4 weeks there conducting research. Fairbanks was ranked as the most polluted city in the nation.</p>
+                      <a href="https://viterbischool.usc.edu/news/2022/04/catching-smoke-how-a-usc-team-is-helping-clear-the-air-in-alaska/" class="btn btn-default" target="_blank">Discover</a>
+                    </div>
+                  </div>
+                   <div class="col-sm-4">
+                      <a href="#" class="black-image-project-hover">
+                        <img src="{{ url_for('static', filename='assets/images/unity.jpg') }}" alt="Image" class="img-responsive">
+                      </a>
+                      <div class="card-container">
+                        <h4>project</h4>
+                        <h3>Love Death + Robots</h3>
+                        <p>Inspired by one of my favorite TV show, Love Death + Robots. I designed and implemented the a game in Unity.</p>
+                        <a href="https://play.unity.com/en/games/7b5c8ae3-d32e-4af7-b1b3-18ed850bc873/webgl-builds" class="btn btn-default" target="_blank">Discover</a>
+                      </div>
+                    </div>
+
+                    <!-- <div class="col-sm-4">
+                      <a href="#" class="black-image-project-hover">
+                        <img src="{{ url_for('static', filename='assets/images/work03-hover.jpg') }}" alt="Image" class="img-responsive">
+                      </a>
+                      <div class="card-container">
+                        <h4>006/006</h4>
+                        <h3>Vivamus vestibulum</h3>
+                        <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
+                        <a href="#" class="btn btn-default">Discover</a>
+                      </div>
+                    </div> -->
+                    
+                </div>
+                <!--/row-->
+            </div>
+            
+            <!--/item--><
+        </div>
+        <!--/carousel-inner--> 
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+     </div>
+
+
+
+    <!--/myCarousel-->
+    </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>tiffanywang2025</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+
+--> <script type="text/javascript" src="{{ url_for('static', filename='main.70a66962.js') }}"></script></body>
+
+</html>
