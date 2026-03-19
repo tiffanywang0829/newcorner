@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border-warm mt-24">
+    <footer className="fixed bottom-0 left-0 right-0 z-40 border-t border-border-warm bg-cream/90 backdrop-blur-md">
       <div className="page-container py-10 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="font-serif text-base font-light text-text-secondary">
           © {new Date().getFullYear()} Tiffany Wang
